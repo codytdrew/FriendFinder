@@ -10,3 +10,11 @@ var PORT = 8080;
 
 // Set up of Express app to handle data parsing
 // ==============================================
+app.use(express.urlencoded({ extended: true}));
+app.use(express.json());
+
+// Start of the server to begin listening phase
+// =============================================
+app.listen(PORT, function () {
+    console.log("App listening on PORT " + PORT);
+});
