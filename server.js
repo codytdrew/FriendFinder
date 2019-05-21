@@ -15,8 +15,8 @@ app.use(express.json());
 
 //Router
 // ===============================================
-require("/app/routing/apiRoutes")(app);
-require("/app/routing/htmlRoutes")(app);
+require("localhost:PORT/app/routing/apiRoutes")(app);
+require("localhost:PORT/app/routing/htmlRoutes")(app);
 
 // Start of the server to begin listening phase
 // =============================================
