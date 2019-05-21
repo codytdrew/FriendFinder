@@ -1,9 +1,11 @@
 // Routes
 // ========================================
-app.get("/", function(req, res) {
-    res.send("Welcome to Friend Finder.  The future of friendship at your fingertips!");
+app.get("/survey", function(req, res) {
+    res.sendFile(path.join(__dirname, "survey.html"));
 });
 
-// app.listener(PORT, function (){
-//     console.log("App listening on PORT " + PORT);
-// });
+// Start of the server to begin listening phase
+// =============================================
+app.listen(PORT, function () {
+    console.log("App listening on PORT " + PORT);
+});
