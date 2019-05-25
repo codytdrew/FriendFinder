@@ -1,7 +1,7 @@
 // DATA 
 // Below data holds the names of all of the compatible matches
 
-var friendArray = [
+var friends = [
     {
         "name": "Emily Ratajkowski",
         "photo": "https://images.app.goo.gl/PAVGHQUPoRQvcLKM6",
@@ -390,4 +390,4 @@ var friendArray = [
 ];
 
 // Exports the array so that other files can access with require
-module.exports = friendArray;
+module.exports = friends;
